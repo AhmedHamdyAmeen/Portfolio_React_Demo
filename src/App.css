@@ -1,0 +1,92 @@
+.App {
+  background-color: #282c34;
+  color: white;
+  /* height: 10000px; */
+}
+
+
+/* Start Global Rules */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Cairo', sans-serif;
+}
+
+/* Rest Some properties */
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+ul {
+  padding-left: 0%;
+}
+
+/* Start Header */
+.header {
+  left: 50%;
+  transform: translateX(-50%);
+  background: #2b2c2f69;
+  z-index: 3;
+}
+
+/* Cover */
+.cover {
+  height: 100vh;
+  position: relative;
+}
+
+.cover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(45deg, #27292c8d, #27292c89), url("../public/imgs/mee.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+}
+
+.cover .container {
+  position: relative;
+  z-index: 1;
+}
+
+.about h2 {
+  font-size: 2.7em;
+}
+
+/* Skills */
+.skillsContent hr {
+  height: 4px !important;
+}
+
+.skillsContent .progress-bar {
+  background-color: gray;
+}
+
+.skillsContent .progress {
+  height: 30px;
+}
+
+/* Portfolio */
+.portfolio .card {
+  height: 250px;
+}
+
+/* .portfolio .card .card-body {
+  display: flex;
+  align-items: center;
+  text-align: center;
+} */
